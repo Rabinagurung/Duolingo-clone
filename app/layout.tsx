@@ -1,0 +1,38 @@
+import type { Metadata } from 'next';
+import { ClerkProvider } from '@clerk/nextjs';
+import { Nunito } from 'next/font/google';
+
+import './globals.css';
+import { Toaster } from '@/components/ui/sonner';
+import { ExitModal } from '@/components/modals/exit-modal';
+import { HeartsModal } from '@/components/modals/hearts-modal';
+import { PracticeModal } from '@/components/modals/practice-modal';
+
+const font = Nunito({ subsets: ['latin'] });
+
+export const metadata: Metadata = {
+  title: 'Duolingo Clone',
+  description: 'A Duolingo clone built with Next.js '
+};
+
+export default function RootLayout({
+  children
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang='en'>
+      <body className={font.className}>
+        <ClerkProvider>
+          <Toaster />
+
+          <ExitModal />
+          <HeartsModal />
+          <PracticeModal />
+
+          {children}
+        </ClerkProvider>
+      </body>
+    </html>
+  );
+}
