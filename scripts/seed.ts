@@ -93,21 +93,24 @@ const main = async () => {
         lessonId: 1, // Nouns
         type: 'SELECT',
         order: 1,
-        question: 'Which one of these is the "the man"?'
+        question: 'Which one of these is the "the man"?',
+        answer: 'el hombre'
       },
       {
         id: 2,
         lessonId: 1, // Nouns
         type: 'ASSIST',
         order: 2,
-        question: '"the man"'
+        question: '"the man"',
+        answer: 'el hombre'
       },
       {
         id: 3,
         lessonId: 1, // Nouns
         type: 'SELECT',
         order: 3,
-        question: 'Which one of these is the "the robot"?'
+        question: 'Which one of these is the "the robot"?',
+        answer: 'el robot'
       }
     ]);
 
@@ -117,21 +120,24 @@ const main = async () => {
         imageSrc: '/man.svg',
         correct: true,
         text: 'el hombre',
-        audioSrc: '/es_man.mp3'
+        audioSrc: '/es_man.mp3',
+        order: 1
       },
       {
         challengeId: 1,
         imageSrc: '/woman.svg',
         correct: false,
         text: 'la mujer',
-        audioSrc: '/es_woman.mp3'
+        audioSrc: '/es_woman.mp3',
+        order: 2
       },
       {
         challengeId: 1,
         imageSrc: '/robot.svg',
         correct: false,
         text: 'el robot',
-        audioSrc: '/es_robot.mp3'
+        audioSrc: '/es_robot.mp3',
+        order: 3
       }
     ]);
 
@@ -140,19 +146,22 @@ const main = async () => {
         challengeId: 2, // "the man"?
         correct: true,
         text: 'el hombre',
-        audioSrc: '/es_man.mp3'
+        audioSrc: '/es_man.mp3',
+        order: 1
       },
       {
         challengeId: 2,
         correct: false,
         text: 'la mujer',
-        audioSrc: '/es_woman.mp3'
+        audioSrc: '/es_woman.mp3',
+        order: 2
       },
       {
         challengeId: 2,
         correct: false,
         text: 'el robot',
-        audioSrc: '/es_robot.mp3'
+        audioSrc: '/es_robot.mp3',
+        order: 3
       }
     ]);
 
@@ -162,21 +171,24 @@ const main = async () => {
         imageSrc: '/man.svg',
         correct: false,
         text: 'el hombre',
-        audioSrc: '/es_man.mp3'
+        audioSrc: '/es_man.mp3',
+        order: 1
       },
       {
         challengeId: 3,
         imageSrc: '/woman.svg',
         correct: false,
         text: 'la mujer',
-        audioSrc: '/es_woman.mp3'
+        audioSrc: '/es_woman.mp3',
+        order: 2
       },
       {
         challengeId: 3,
         imageSrc: '/robot.svg',
         correct: true,
         text: 'el robot',
-        audioSrc: '/es_robot.mp3'
+        audioSrc: '/es_robot.mp3',
+        order: 3
       }
     ]);
 
@@ -186,21 +198,24 @@ const main = async () => {
         lessonId: 2, // Verbs
         type: 'SELECT',
         order: 1,
-        question: 'Which one of these is the "the man"?'
+        question: 'Which one of these is the "the man"?',
+        answer: 'el hombre'
       },
       {
         id: 5,
         lessonId: 2, // Verbs
         type: 'ASSIST',
         order: 2,
-        question: '"the man"'
+        question: '"the man"',
+        answer: 'el hombre'
       },
       {
         id: 6,
         lessonId: 2, // Verbs
         type: 'SELECT',
         order: 3,
-        question: 'Which one of these is the "the robot"?'
+        question: 'Which one of these is the "the robot"?',
+        answer: 'el robot'
       }
     ]);
     console.log('Seeding finished');
